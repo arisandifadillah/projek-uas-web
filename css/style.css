@@ -1,0 +1,371 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+.jumbotron,
+footer,
+#breadcrumb,
+#detail-product,
+#checkout,
+#sukses,
+#contact {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand,
+.nav-link {
+    position: relative;
+    color: aliceblue !important;
+    z-index: 1;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+    margin-left: 80px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid white;
+    margin-bottom: -8px;
+}
+
+.nav-link img {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link span {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    right: -5px;
+    top: -1px;
+    height: 15px;
+    width: 15px;
+    background: rgb(169, 169, 169);
+    color: #252525;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 15px;
+}
+
+.navbar-detail {
+    background-image: linear-gradient(black, rgb(62, 62, 62));
+}
+
+
+/* jumbrotron */
+
+.jumbotron {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    height: 540px;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 150px;
+    font-weight: 100;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+.jumbotron .btn-catalog {
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+    padding: 8px 50px 8px 50px;
+    border-radius: 5px;
+    margin-top: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.jumbotron .btn-catalog:hover {
+    background-color: rgb(18, 18, 18);
+    color: #f5f5f5;
+    padding: 8px 50px 8px 50px;
+    border-radius: 5px;
+    margin-top: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
+
+.jumbotron {
+    margin-top: -75px;
+    height: 640px;
+}
+
+#catalog {
+    margin-top: 50px;
+}
+
+#catalog p {
+    color: grey;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.catalog:hover {
+    text-decoration: none;
+}
+
+.catalog .card-catalog {
+    border: none;
+    color: #252525;
+    transition: 0.3s;
+}
+
+.catalog .card-catalog:hover {
+    transform: scale(1.1);
+}
+
+.img-card-catalog {
+    object-fit: cover;
+}
+
+.star {
+    margin-top: -10px;
+}
+
+.btn-lihat {
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-lihat:hover {
+    background-color: rgb(18, 18, 18);
+    color: #f5f5f5;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
+
+#trending {
+    margin-top: 80px;
+}
+
+#trending small {
+    color: grey;
+}
+
+#trending h4 {
+    font-weight: 800;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+footer .brand {
+    font-family: 'Cinzel', serif;
+}
+
+footer .copyright small {
+    font-size: 8px;
+}
+
+footer .info p {
+    font-weight: 500;
+}
+
+.product-details .pd-title span {
+    font-size: 12px;
+    color: #b2b2b2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.product-details .pd-title h3 {
+    color: #252525;
+    font-weight: 700;
+}
+
+.product-details .pd-desc {
+    margin-bottom: 24px;
+}
+
+.product-details .pd-desc p {
+    color: #636363;
+}
+
+.product-details .pd-desc h4 {
+    color: #252525;
+    font-weight: 700;
+}
+
+.product-details .pd-desc h4 span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.btn-cart {
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+    padding: 8px 50px 8px 50px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-cart:hover {
+    background-color: rgb(18, 18, 18);
+    color: #f5f5f5;
+    padding: 8px 50px 8px 50px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
+
+.related-product {
+    margin-top: 130px;
+}
+
+#checkout {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cart-table {
+    margin-bottom: 40px;
+}
+
+.cart-table table {
+    width: 100%;
+    border: 1px solid #ebebeb;
+}
+
+.cart-table table tr th {
+    font-size: 16px;
+    color: #252525;
+    font-weight: 700;
+    border-bottom: 1px solid #ebebeb;
+    text-align: center;
+    padding: 18px 0 19px;
+    text-transform: uppercase;
+}
+
+.cart-table table tr td {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cart-table table tr td.cart-title h5 {
+    color: #252525;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.proceed-checkout ul {
+    border: 2px solid #ebebeb;
+    background: #f3f3f3;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.proceed-checkout ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.proceed-checkout ul li.subtotal {
+    font-weight: 400;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 14px;
+}
+
+.proceed-checkout ul li.subtotal span {
+    font-weight: 700;
+}
+
+.proceed-checkout ul li span {
+    float: right;
+}
+
+.proceed-checkout .proceed-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #252525;
+    text-transform: uppercase;
+    padding: 15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}
+
+.success-checkout {
+    height: 100vh;
+}
+
+.btn-sukses {
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-sukses:hover {
+    background-color: rgb(18, 18, 18);
+    color: #f5f5f5;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
